@@ -5,7 +5,6 @@ import { Container } from "zuma-blocks";
 import Image from "next/image";
 import React from "react";
 import baPhoto from "public/images/DSC09515_.jpg";
-import girlsAudio from "assets/audio/Girls got Rhythm.ref1.mp3";
 import { motion } from "framer-motion";
 
 const MotionImage = motion(Image);
