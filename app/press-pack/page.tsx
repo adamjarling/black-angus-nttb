@@ -4,6 +4,11 @@ import BannerHeadline from "@/components/banner/Headline";
 import ContentWrapper from "@/components/press-pack/ContentWrapper";
 import Image from "next/image";
 import Main from "@/components/Main";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Press Pack",
+};
 
 const PressPack = () => {
   return (

@@ -3,7 +3,12 @@ import BannerHeadline from "@/components/banner/Headline";
 import Container from "@/components/Container";
 import Image from "next/image";
 import Main from "@/components/Main";
+import { Metadata } from "next";
 import promoPhoto from "public/images/web-banner-cutup.jpg";
+
+export const metadata: Metadata = {
+  title: "Contact",
+};
 
 const Contact = () => {
   return (

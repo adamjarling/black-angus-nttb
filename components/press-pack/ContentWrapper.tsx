@@ -4,7 +4,7 @@ import BannerHeadline from "../banner/Headline";
 import { Container } from "zuma-blocks";
 import Image from "next/image";
 import React from "react";
-import baPhoto from "public/images/DSC09515_.jpg";
+import baPhoto from "public/images/ba-band-photo.jpg";
 import { motion } from "framer-motion";
 
 const MotionImage = motion(Image);
