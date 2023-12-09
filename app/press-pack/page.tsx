@@ -1,6 +1,7 @@
 import BandsCardList from "@/components/bands/CardList";
 import Banner from "@/components/banner/Banner";
 import BannerHeadline from "@/components/banner/Headline";
+import ContentWrapper from "@/components/press-pack/ContentWrapper";
 import Image from "next/image";
 import Main from "@/components/Main";
 
@@ -10,6 +11,8 @@ const PressPack = () => {
       <Banner>
         <BannerHeadline>Press Pack</BannerHeadline>
       </Banner>
+
+      <ContentWrapper />
 
       {/* <BandsCardList /> */}
     </Main>

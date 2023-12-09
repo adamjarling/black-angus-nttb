@@ -17,7 +17,7 @@ const BannerHeadline: React.FC<BannerHeadlineProps> = ({ children }) => {
         opacity: 1,
       }}
       transition={{
-        duration: 0.5,
+        duration: 1,
       }}
       className="banner-headline"
     >

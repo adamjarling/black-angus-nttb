@@ -21,7 +21,7 @@ const BannerParallax: React.FC = () => {
         fill
         className="z-0 object-cover"
       />
-      <div className="container absolute flex items-center justify-center w-full h-screen">
+      <div className="container relative flex items-center justify-center w-full h-screen mx-auto">
         <div className="max-w-4xl">
           <h1 className="sr-only">Black Angus Chicago</h1>
           <MotionImage

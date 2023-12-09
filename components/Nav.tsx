@@ -4,12 +4,12 @@ import { FiMenu, FiX } from "react-icons/fi";
 import React, { useEffect, useState } from "react";
 import { motion, useScroll } from "framer-motion";
 
+import Image from "next/image";
 import { IoIosMenu } from "react-icons/io";
 import SocialMediaIcons from "./SocialMediaIcons";
 import { config } from "@/nttb-config";
-import { usePathname } from "next/navigation";
-import Image from "next/image";
 import logo from "public/images/black-angus-font-logo-white.png";
+import { usePathname } from "next/navigation";
 
 interface NavProps {
   links: {
@@ -84,7 +84,11 @@ const Nav: React.FC<NavProps> = ({ links }) => {
                 isMobileNavOpen && "hidden"
               }`}
             >
-              <Image src={logo} alt="Black Angus Logo" className="w-auto h-8" />
+              <Image
+                src={logo}
+                alt="Black Angus Logo"
+                className="w-auto h-6 md:h-8"
+              />
             </motion.a>
           </div>
           <div className={`hidden lg:flex uppercase opacity-100 z-30`}>
