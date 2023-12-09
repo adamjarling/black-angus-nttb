@@ -17,6 +17,10 @@ module.exports = {
       padding: "2rem",
     },
     extend: {
+      fontFamily: {
+        sans: ["var(--font-bodyFont)"],
+        headline: ["var(--font-headline)"],
+      },
       spacing: {
         128: "32rem",
         144: "36rem",

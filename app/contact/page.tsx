@@ -3,11 +3,11 @@ import BannerHeadline from "@/components/banner/Headline";
 import Image from "next/image";
 import Main from "@/components/Main";
 
-const About = () => {
+const Live = () => {
   return (
     <Main flushTop={false}>
       <Banner>
-        <BannerHeadline>About</BannerHeadline>
+        <BannerHeadline>Live</BannerHeadline>
       </Banner>
 
       <section className="text-center section">Some text goes here</section>
@@ -15,4 +15,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default Live;

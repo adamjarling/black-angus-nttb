@@ -1,19 +1,18 @@
-import BandsCardList from "@/components/bands/CardList";
 import Banner from "@/components/banner/Banner";
 import BannerHeadline from "@/components/banner/Headline";
 import Image from "next/image";
 import Main from "@/components/Main";
 
-const Bands = () => {
+const Live = () => {
   return (
     <Main flushTop={false}>
       <Banner>
-        <BannerHeadline>Bands</BannerHeadline>
+        <BannerHeadline>Live</BannerHeadline>
       </Banner>
 
-      <BandsCardList />
+      <section className="text-center section">Some text goes here</section>
     </Main>
   );
 };
 
-export default Bands;
+export default Live;

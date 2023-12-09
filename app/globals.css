@@ -24,7 +24,7 @@ html {
   }
 
   .banner-headline {
-    @apply font-semibold text-center text-5xl md:text-8xl lg:text-[128px] leading-none pb-3;
+    @apply font-headline text-center text-5xl md:text-8xl lg:text-[128px] leading-none pb-3;
   }
 
   .section {

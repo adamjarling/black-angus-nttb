@@ -3,16 +3,22 @@ import "./globals.css";
 import { config, nav } from "nttb-config";
 
 import Footer from "@/components/Footer";
-import { Libre_Franklin } from "next/font/google";
+import { ADLaM_Display, Libre_Franklin, Montserrat } from "next/font/google";
 import { Metadata } from "next";
 import Nav from "@/components/Nav";
 import Script from "next/script";
 
 const { OPEN_GRAPH, SITE } = config;
 
-const libreFranklin = Libre_Franklin({
+const bodyFont = Montserrat({
   subsets: ["latin"],
-  variable: "--font-libreFranklin",
+  variable: "--font-bodyFont",
+});
+
+const headline = Montserrat({
+  subsets: ["latin"],
+  variable: "--font-headline",
+  weight: "400",
 });
 
 export const metadata: Metadata = {
@@ -31,11 +37,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={libreFranklin.className}>
+    <html lang="en" className={` ${bodyFont.variable} ${headline.variable} `}>
       {/* Favicon */}
       <link rel="icon" href="/favicon.png" type="image/png" />
 
-      <body className="relative bg-black text-slate-50">
+      <body className="relative font-sans bg-black text-slate-50">
         <div className="flex flex-col justify-between h-screen ">
           <Nav links={nav} />
           <div className="">{children}</div>
