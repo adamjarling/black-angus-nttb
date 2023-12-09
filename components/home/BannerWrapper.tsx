@@ -9,14 +9,13 @@ const BannerWrapper = () => {
       images={[
         {
           mediaQuery: `(max-width: 640px)`,
-          src: "../masonry-images/310692583_534548905340415_6981777318805823681_n.jpeg",
-          srcSet:
-            "../masonry-images/310692583_534548905340415_6981777318805823681_n.jpeg",
+          src: "../images/DSC08744.JPG",
+          srcSet: "../images/DSC08744.JPG",
         },
         {
           mediaQuery: "(min-width: 641px)",
-          src: "/images/adam-vigo.jpeg",
-          srcSet: "/images/adam-vigo.jpeg",
+          src: "../images/DSC08744.JPG",
+          srcSet: "../images/DSC08744.JPG",
         },
         // {
         //   mediaQuery: "",

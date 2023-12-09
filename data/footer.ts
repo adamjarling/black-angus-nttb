@@ -23,9 +23,9 @@ export const footerSocials = [
     icon: SocialIcons.InstagramIcon,
   },
   {
-    name: "Github",
-    href: socialMedia.github.url,
-    icon: SocialIcons.GitHubIcon,
+    name: "YouTube",
+    href: socialMedia.youtube.url,
+    icon: SocialIcons.YouTubeIcon,
   },
   {
     name: "Twitter",

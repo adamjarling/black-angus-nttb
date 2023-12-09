@@ -1,10 +1,9 @@
-const siteTitle =
-  "Adam J. Arling - rock, blues guitarist, bassist and front end engineer living in Chicago USA";
-const ogImage = "/images/adam-vigo.jpeg";
-const url = "https://adamarling.com";
+const siteTitle = "Black Angus (Chicago) AC/DC Tribute Act";
+const ogImage = "/images/DSC08744.JPG";
+const url = "https://blackangusrock.com";
 
 const description =
-  "Adam J. Arling is a musician and front end engineer living in Chicago USA";
+  "Black Angus (Chicago) is the official AC/DC Tribute Act since 2008 delivering the Bon Scott era 1970s AC/DC experience you love and deserve.";
 
 const config = {
   OPEN_GRAPH: {
@@ -24,7 +23,7 @@ const config = {
   },
   SITE: {
     description,
-    name: "Adam J. Arling",
+    name: "Black Angus",
     title: siteTitle,
     url,
   },
@@ -41,31 +40,39 @@ const nav: Array<Nav> = [
   //   name: "About",
   // },
   {
-    href: "/bands",
-    name: "Bands",
+    href: "/live",
+    name: "Live",
   },
   {
-    href: "/work",
-    name: "Work",
+    href: "/photos",
+    name: "Photos",
+  },
+  {
+    href: "/press-pack",
+    name: "Press Pack",
+  },
+  {
+    href: "/contact",
+    name: "Contact",
   },
 ];
 
 const socialMedia = {
   facebook: {
-    handle: "adam.arling",
-    url: "https://www.facebook.com/adam.arling/",
-  },
-  github: {
-    handle: "adamjarling",
-    url: "https://github.com/adamjarling",
+    handle: "blackangusrock",
+    url: "https://www.facebook.com/blackangusrock",
   },
   instagram: {
-    handle: "adamjarling",
-    url: "https://www.instagram.com/adamjarling/",
+    handle: "blackangusrock",
+    url: "https://www.instagram.com/blackangusrock/",
   },
   twitter: {
-    handle: "AdamJArling",
-    url: "https://twitter.com/AdamJArling",
+    handle: "blackangusrock",
+    url: "https://twitter.com/blackangusrock",
+  },
+  youtube: {
+    handle: "UCGzpFZEvHz1iHQ1B9ScB8rg",
+    url: "https://www.youtube.com/channel/UCGzpFZEvHz1iHQ1B9ScB8rg",
   },
 };
 

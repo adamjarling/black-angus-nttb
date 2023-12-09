@@ -17,11 +17,6 @@ const socialIcons = [
     url: socialMedia.instagram.url,
   },
   {
-    label: "Github",
-    Icon: FiGithub,
-    url: socialMedia.github.url,
-  },
-  {
     label: "Facebook",
     Icon: FiFacebook,
     url: socialMedia.facebook.url,
