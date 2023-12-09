@@ -8,6 +8,8 @@ import { IoIosMenu } from "react-icons/io";
 import SocialMediaIcons from "./SocialMediaIcons";
 import { config } from "@/nttb-config";
 import { usePathname } from "next/navigation";
+import Image from "next/image";
+import logo from "public/images/black-angus-font-logo-white.png";
 
 interface NavProps {
   links: {
@@ -82,7 +84,7 @@ const Nav: React.FC<NavProps> = ({ links }) => {
                 isMobileNavOpen && "hidden"
               }`}
             >
-              <span className="">{config.SITE.name}</span>
+              <Image src={logo} alt="Black Angus Logo" className="w-auto h-8" />
             </motion.a>
           </div>
           <div className={`hidden lg:flex uppercase opacity-100 z-30`}>

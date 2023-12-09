@@ -11,6 +11,7 @@ import { promises as fs } from "fs";
 import { motion } from "framer-motion";
 import path from "path";
 import { shuffle } from "./utils/shuffle";
+import BannerParallax from "@/components/home/BannerParallax";
 
 const sizeOf = require("image-size");
 
@@ -36,7 +37,8 @@ export default async function Home() {
   return (
     <>
       <Main flushTop>
-        <BannerWrapper />
+        {/* <BannerWrapper /> */}
+        <BannerParallax />
         <Banner className="">
           <BannerHeadline>Europe 2023</BannerHeadline>
           <p className="">

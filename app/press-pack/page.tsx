@@ -4,11 +4,11 @@ import BannerHeadline from "@/components/banner/Headline";
 import Image from "next/image";
 import Main from "@/components/Main";
 
-const Bands = () => {
+const PressPack = () => {
   return (
     <Main flushTop={false}>
       <Banner>
-        <BannerHeadline>Bands</BannerHeadline>
+        <BannerHeadline>Press Pack</BannerHeadline>
       </Banner>
 
       {/* <BandsCardList /> */}
@@ -16,4 +16,4 @@ const Bands = () => {
   );
 };
 
-export default Bands;
+export default PressPack;
