@@ -16,7 +16,7 @@ const BannerParallax: React.FC = () => {
       <div className="absolute z-10 w-full h-32 bg-transparent opacity-50 bg-gradient-to-t from-transparent to-black" />
       <MotionImage
         style={{ y }}
-        src={`/images/DSC08744.JPG`}
+        src={`/photos/DSC08744.JPG`}
         alt={`Black Angus rockin`}
         fill
         className="z-0 object-cover"
