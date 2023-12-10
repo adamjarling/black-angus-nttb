@@ -1,7 +1,8 @@
 "use client";
 
+import { Container, ExternalLink } from "zuma-blocks";
+
 import BannerHeadline from "../banner/Headline";
-import { Container } from "zuma-blocks";
 import Image from "next/image";
 import React from "react";
 import baPhoto from "public/images/ba-band-photo.jpg";
@@ -24,19 +25,28 @@ const ContentWrapper = () => {
           <p>
             Far beyond your average wig-wearing cover band, BLACK ANGUS consists
             of veteran Chicago rock & blues touring and recording musicians from
-            the likes of Loudmouth, Cathedral, Urge Overkill, Skinwalker, The
-            Last Vegas, Frank Bang&apos;s Secret Stash, Thunderwing, Maiden
-            Chicago, Head On, Fierce Atmospheres, The Cynics and more.
+            the likes of{" "}
+            <ExternalLink href="https://en.wikipedia.org/wiki/Loudmouth_(band)">
+              Loudmouth
+            </ExternalLink>{" "}
+            , Cathedral,{" "}
+            <ExternalLink href="https://thelastvegas.com">
+              The Last Vegas
+            </ExternalLink>
+            ,{" "}
+            <ExternalLink href="https://frankbangmusic.com/">
+              Frank Bang&apos;s Secret Stash
+            </ExternalLink>
+            , Thunderwing, Maiden Chicago, Head On, Fierce Atmospheres and more.
           </p>
 
           <p>
-            &quot;Our current line-up are just great players&quot; says Taran De
-            Pablos, singer of BLACK ANGUS. &quot;Our guys have toured the world,
-            released hit albums, done stadium tours, you name it we&quot;ve done
+            &quot;Our current line-up is smokin &quot; says Taran De Pablos,
+            singer of BLACK ANGUS. &quot;These dudes have toured all over,
+            released hit albums, played stadiums, you name it we&quot;ve done
             it. When performing with Black Angus, it&quot;s a band having fun,
-            breathing some life into some of the best rock songs of all time.
-            The bull has found the unmistakable, AC/DC boogie. People love
-            it.&quot;
+            breathing some life into some of the best rock songs of all time. We
+            have fun, the crowds have fun, let there be rock!&quot;
           </p>
 
           <p>

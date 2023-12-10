@@ -39,7 +39,16 @@ const Photos = async () => {
         <BannerHeadline>Photos</BannerHeadline>
       </Banner>
 
-      {images && <MasonryGallery dir={folder} images={images} />}
+      {images && (
+        <MasonryGallery
+          breakpointColumnsObj={{
+            default: 2,
+            640: 1,
+          }}
+          dir={folder}
+          images={images}
+        />
+      )}
     </Main>
   );
 };

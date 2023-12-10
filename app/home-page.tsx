@@ -51,40 +51,42 @@ export default async function Home() {
         {/* <BannerWrapper /> */}
         <BannerParallax />
 
-        <HappyHolidays />
+        <div className="space-y-10 md:space-y-16">
+          <HappyHolidays />
 
-        <Container>
-          <Banner className="relative z-20">
-            <BannerHeadline>Upcoming Shows</BannerHeadline>
-          </Banner>
+          <Container>
+            <Banner className="relative z-20">
+              <BannerHeadline>Upcoming Shows</BannerHeadline>
+            </Banner>
 
-          <ul>
-            {currentShows.length > 0 &&
-              currentShows.slice(0, 2).map((show) => (
-                <li key={show.datetime}>
-                  <LiveListItem show={show as Show}></LiveListItem>
-                </li>
-              ))}
-            {currentShows.length === 0 && (
-              <p className="text-center">
-                Check back soon for 2024 show announcments!
-              </p>
-            )}
-          </ul>
-          <div className="flex justify-end mb-20">
-            <Link href="/live" className="button">
-              View All Shows
-              <ArrowRightIcon className="inline-block w-5 h-5 ml-2" />
-            </Link>
-          </div>
-        </Container>
+            <ul>
+              {currentShows.length > 0 &&
+                currentShows.slice(0, 2).map((show) => (
+                  <li key={show.datetime}>
+                    <LiveListItem show={show as Show}></LiveListItem>
+                  </li>
+                ))}
+              {currentShows.length === 0 && (
+                <p className="text-center">
+                  Check back soon for 2024 show announcments!
+                </p>
+              )}
+            </ul>
+            <div className="flex justify-end mb-20">
+              <Link href="/live" className="button">
+                View All Shows
+                <ArrowRightIcon className="inline-block w-5 h-5 ml-2" />
+              </Link>
+            </div>
+          </Container>
 
-        {images && <MasonryGallery dir={folder} images={shuffledImages} />}
+          {images && <MasonryGallery dir={folder} images={shuffledImages} />}
 
-        {/* <Banner className="text-white bg-black">
-          <BannerHeadline>Another Banner Headline</BannerHeadline>
-          <p>Some subhead content here</p>
-        </Banner> */}
+          {/* <Banner className="text-white bg-black">
+  <BannerHeadline>Another Banner Headline</BannerHeadline>
+  <p>Some subhead content here</p>
+</Banner> */}
+        </div>
       </Main>
     </>
   );

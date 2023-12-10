@@ -1,5 +1,6 @@
 "use client";
 
+import { Bars3CenterLeftIcon, XMarkIcon } from "@heroicons/react/20/solid";
 import { FiMenu, FiX } from "react-icons/fi";
 import React, { useEffect, useState } from "react";
 import { motion, useScroll } from "framer-motion";
@@ -69,7 +70,7 @@ const Nav: React.FC<NavProps> = ({ links }) => {
           }}
         ></motion.div>
         <nav
-          className={`flex justify-between items-center py-3 lg:py-5 shadow-sm w-full`}
+          className={`flex justify-between items-center pb-3 pt-4 lg:py-5 shadow-sm w-full`}
         >
           {/* Desktop nav */}
           <div className={`flex items-center opacity-100 z-30`}>
@@ -121,9 +122,9 @@ const Nav: React.FC<NavProps> = ({ links }) => {
               aria-label="Toggle mobile menu"
             >
               {isMobileNavOpen ? (
-                <FiX size={40} color="white" />
+                <XMarkIcon className="w-8 h-8 text-white" />
               ) : (
-                <IoIosMenu size={40} />
+                <Bars3CenterLeftIcon className="w-8 h-8 text-white" />
               )}
             </motion.button>
           </div>

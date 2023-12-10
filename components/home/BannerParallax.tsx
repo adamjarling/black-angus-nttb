@@ -1,9 +1,9 @@
 "use client";
 
 import { motion, useScroll, useTransform } from "framer-motion";
-import logo from "public/images/black-angus-font-logo-white.png";
 
 import Image from "next/image";
+import logo from "public/images/black-angus-font-logo-white.png";
 
 const MotionImage = motion(Image);
 
@@ -32,12 +32,12 @@ const BannerParallax: React.FC = () => {
             alt="Black Angus Logo"
           />
           <motion.p
-            className="pt-4 text-xl text-center text-gray-300"
+            className="pt-4 text-base text-center text-gray-300 md:text-xl"
             initial={{
               opacity: 0,
             }}
             animate={{ opacity: 1 }}
-            transition={{ duration: 2, delay: 1.5 }}
+            transition={{ duration: 2, delay: 1 }}
           >
             Bon Scott era AC/DC tribute act, rocking hard since 2008
           </motion.p>

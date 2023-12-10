@@ -21,6 +21,10 @@ export type MasonryImage = {
 };
 
 interface Props {
+  breakpointColumnsObj?: {
+    default: number;
+    [key: number]: number;
+  };
   dir: string;
   images: MasonryImage[];
   manifest?: {
@@ -41,16 +45,19 @@ function getInfo(src: string, manifest: any) {
   return info || "";
 }
 
-const MasonryGallery: React.FC<Props> = ({ dir, images = [], manifest }) => {
+const MasonryGallery: React.FC<Props> = ({
+  breakpointColumnsObj = {
+    default: 3,
+    1100: 2,
+  },
+  dir,
+  images = [],
+  manifest,
+}) => {
   const [photoIndex, setPhotoIndex] = useState(-1);
 
   const handleImageClick = (index: number) => {
     setPhotoIndex(index);
-  };
-
-  const breakpointColumnsObj = {
-    default: 3,
-    1100: 2,
   };
 
   const galleryImages = !manifest

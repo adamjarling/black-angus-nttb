@@ -4,6 +4,7 @@ import Banner from "@/components/banner/Banner";
 import BannerHeadline from "@/components/banner/Headline";
 import Container from "@/components/Container";
 import Image from "next/image";
+import LiveImageWrapper from "@/components/live/ImageWrapper";
 import LiveListBig from "@/components/live/ListBig";
 import Main from "@/components/Main";
 import { Metadata } from "next";
@@ -21,6 +22,8 @@ const Live = () => {
       <Banner>
         <BannerHeadline>Live</BannerHeadline>
       </Banner>
+
+      <LiveImageWrapper />
 
       <div className="space-y-16">
         <LiveListBig shows={currentShows as Show[]} />
