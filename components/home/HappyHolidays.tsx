@@ -6,7 +6,7 @@ import Container from "@/components/Container";
 import Image from "next/image";
 import React from "react";
 import { motion } from "framer-motion";
-import xMasPhoto from "public/images/hob-2019-ANIMATION.gif";
+import xMasPhoto from "public/photos/hob-2019-ANIMATION.gif";
 
 const MotionImage = motion(Image);
 

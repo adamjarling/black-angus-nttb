@@ -2,7 +2,7 @@
 
 import Container from "@/components/Container";
 import Image from "next/image";
-import liveShot from "public/images/DSC05969.jpg";
+import liveShot from "public/images/band-bw.jpg";
 import { motion } from "framer-motion";
 
 const MotionImage = motion(Image);
