@@ -1,5 +1,5 @@
 const siteTitle = "Black Angus (Chicago) AC/DC Tribute Act";
-const ogImage = "/images/DSC08744.JPG";
+const ogImage = "/photos/DSC08744.JPG";
 const url = "https://blackangusrock.com";
 
 const description =
