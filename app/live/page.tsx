@@ -8,6 +8,7 @@ import LiveImageWrapper from "@/components/live/ImageWrapper";
 import LiveListBig from "@/components/live/ListBig";
 import Main from "@/components/Main";
 import { Metadata } from "next";
+import Posters from "@/components/live/PostersWrapper";
 import useShows from "@/hooks/use-shows";
 
 export const metadata: Metadata = {
@@ -42,6 +43,8 @@ const Live = () => {
             <LiveListBig shows={pastShows as Show[]} />
           </Container>
         )}
+
+        <Posters />
       </div>
     </Main>
   );

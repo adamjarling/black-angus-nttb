@@ -1,18 +1,18 @@
+import { OpenGraph } from "next/dist/lib/metadata/types/opengraph-types";
+
 const siteTitle = "Black Angus (Chicago) AC/DC Tribute Act";
 const ogImage = "/photos/DSC08744.JPG";
 const url = "https://blackangusrock.com";
 
 const description =
-  "Black Angus (Chicago) is the official AC/DC Tribute Act since 2008 delivering the Bon Scott era 1970s AC/DC experience you love and deserve.";
+  "Black Angus (Chicago) is a Bon Scott era AC/DC Tribute Act since 2008 delivering the 1970s AC/DC experience you love and deserve.";
 
 const config = {
   OPEN_GRAPH: {
     description,
     images: [
       {
-        url: `${
-          process.env.NEXT_PUBLIC_BASE_URL
-        }/api/og?cover=${encodeURIComponent(ogImage)}`,
+        url: `/api/og?cover=${encodeURIComponent(ogImage)}`,
       },
     ],
     locale: "en-US",
@@ -20,7 +20,7 @@ const config = {
     title: siteTitle,
     type: "website",
     url,
-  },
+  } as OpenGraph,
   SITE: {
     description,
     name: "Black Angus",
